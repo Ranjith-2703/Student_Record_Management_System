@@ -52,8 +52,10 @@ int main()
 				  puts("E/e Exit without saving");
 				  scanf(" %c",&ch);
 				  ch=toupper(ch);
-				  if(ch=='S')
-				  st_save(head);
+				  if(ch=='S'){
+				  	st_save(head);
+					return 0;
+				  }
 				  else
 					  return 0;
 		}
